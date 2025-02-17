@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>grocery</title>
+	<!-- cirsor -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- bootstrap css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<!-- front awsome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+	
+</head>
+<body>
+<!-- nav bar -->
+<nav class="container-fluid nav">
+	<div class="first_flex ">
+	<div class="d-flex align-items-center ">
+		<a href="#" class="logo"><img src="assets/img/logo.svg" height="50px" class="ms-3 "></a>
+		<i class="fa-solid fa-bars fs-3 ms-3 text-secondary" onclick="side_nav()"></i>		
+	</div>
+	<div class="nav-search ms-5 d-flex align-items-center justify-content-around">
+		<select class="form-select form-select-sm w-25  nav-select" aria-label="Small select example">
+		  <option selected>All Categorie</option>
+		  <option value="1">Groceries</option>
+		  <option value="2">Drinks</option>
+		  <option value="3">Chocolates</option>
+		</select>
+		<input type="text" name="search" placeholder="Search for mor then 20,000 prducts" class=" p-2">
+		<i class="fa-solid fa-magnifying-glass fs-4"></i>	
+	</div>
+	</div>
+	<div class="second_flex ">
+	<div class="thard d-flex align-items-center">
+		<li class="nav-item"><a href="#" class="text-dark fs-4 ">home</a></li>
+		<li class="nav-item dropdown">
+			<a class="nav-link nav-ele fs-4 ms-3 mt-0 text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">pages <i class="fa-solid fa-caret-down"></i></a>
+			<ul class="dropdown-menu ">
+			    <li><a class="dropdown-item item" href="#">About Us</a></li>
+				<li><a class="dropdown-item item" href="#">Shop</a></li>
+			    <li><a class="dropdown-item item" href="#">Single Product</a></li>
+			    <li><a class="dropdown-item item" href="#">Cart</a></li>
+			    <li><a class="dropdown-item item" href="#">Check Out</a></li>
+			    <li><a class="dropdown-item item" href="#">Blog</a></li>
+			    <li><a class="dropdown-item item" href="#">Single post</a></li>
+			    <li><a class="dropdown-item item" href="#">Styles</a></li>
+			    <li><a class="dropdown-item item" href="#">Contact</a></li>
+			    <li><a class="dropdown-item item" href="#">Thank you</a></li>
+			    <li><a class="dropdown-item item" href="#">My Account</a></li>
+			</ul>
+		</li>	
+	</div>
+	<div class="fourth d-flex align-items-center">
+		<i class="fa-regular fa-circle-user fs-4"></i>
+		<i class="fa-regular fa-bookmark fs-4 ms-3"></i>
+		<i class="fa-regular fa-heart fs-4 ms-3"></i>
+	</div>
+	</div>
+</nav>
+
+<div class="side-nav" id="side-nav" onclick="side_toggle()">
+	<ul class="bg-white p-4">
+		<div class="d-flex justify-content-between align-items-center">
+			<p class="fs-3">MENU</p>
+			<i class="fa-solid fa-xmark fs-3 text-secondary" onclick="side_toggle()"></i>
+		</div>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-apple-whole"></i>
+			<label class="ms-2">fruits & vegetables</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-egg"></i>
+			<label class="ms-2">dairy $ eggs</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-drumstick-bite"></i>
+			<label class="ms-2">meat & poultry</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-fish-fins"></i>
+			<label class="ms-2">seafood</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-bread-slice"></i>
+			<label class="ms-2">bakery & bread</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-candy-cane"></i>
+			<label class="ms-2">canned goods</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-utensils"></i>
+			<label class="ms-2">frozen foods</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-bowl-food"></i>
+			<label class="ms-2">pasta & rice</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-mug-hot"></i>
+			<label class="ms-2">breakfast foods</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-cookie-bite"></i>
+			<label class="ms-2">snacks & chips</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-bowl-rice"></i>
+			<label class="ms-2">beverages</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-candy-cane"></i>
+			<label class="ms-2">spices & seasonings</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-baby"></i>
+			<label class="ms-2">baby foods</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-kit-medical"></i>
+			<label class="ms-2">health & wellness</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-bowl-rice"></i>
+			<label class="ms-2">household supplies</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-hand-holding-medical"></i>
+			<label class="ms-2">personal care</label>
+		</a> </li>
+		<li class="fs-4"><a href="#">
+			<i class="fa-solid fa-paw"></i>
+			<label class="ms-2">pet food</label>
+		</a> </li>
+	</ul>
+</div>
+
+
+<!-- *****************************container part*********************************-->
+
+<div class="container-fluid body">
+	<div class="col-lg-6 p-5">
+		<p class="cont-text"><span class="fw-bolder text-success">Organic</span> Foods at your <span class="fw-bolder">Doorsteps</span></p>
+		<p class="mt-2 fs-2 text-secondary">Dignissim massa diam elementum.</p>
+		<button type="button" class="btn btn-success mt-4">START SHOPPING</button>
+		<button type="button" class="btn btn-dark ms-4 mt-4">JOIN NOW</button>
+		<div class="mt-4 row">
+			<div class="col col-lg-4 col-md-12 d-flex align-items-center">
+				<h1 class="fw-bold ">14k+</h1><span class="ms-2 fs-5">Product Varieties</span>
+			</div>
+			<div class="col col-lg-4 col-md-12 d-flex align-items-center">
+				<h1 class="fw-bold ">50k+</h1><span class="ms-2 fs-5">Happy Customer</span>
+			</div>
+			<div class="col col-lg-4 col-md-12 d-flex align-items-center">
+				<h1 class="fw-bold ">10k+</h1><span class="ms-2 fs-5">Store Locations</span>
+			</div>
+		</div>
+	</div>
+	<div class="row ms-md-5 ms-3">
+		<div class="col col-lg-4 col-12 body_box bg-success row p-2 text-white">
+			<i class="fa-solid fa-rotate col-lg-3"></i>
+			<div class="col-lg-9">
+				<h2>Fresh from farm</h2>
+				<p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipi elit. </p>
+			</div>	
+		</div>
+		<div class="col col-lg-4 col-12 body_box row p-2 text-white" style="background-color: #404f2c">
+			<i class="fa-solid fa-leaf col-lg-3"></i>
+			<div class="col-lg-9">
+				<h2>100% Organic</h2>
+				<p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipi elit. </p>
+			</div>	
+		</div>
+		<div class="col col-lg-4 col-12 body_box row p-2 text-white" style="background-color: #f57e42;">
+			<i class="fa-solid fa-truck col-lg-3"></i>
+			<div class="col-lg-9">
+				<h2>Free delivery</h2>
+				<p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipi elit. </p>
+			</div>	
+		</div>
+	</div>
+</div>
+
+
+<!-- *****************************category part **********************************-->
+
+<!-- Swiper Container -->
+<div class="container-fluid swiper mySwiper p-lg-5 p-3">
+    <div class="d-flex justify-content-between align-items-center category">
+        <h2 class="fw-bold">Category</h2>
+        <div class="d-flex position-relative align-items-center">
+            <button type="button" class="btn btn-success">View All</button>
+            <div class="swiper-button-next position-relative swiper-change ms-4"></div>
+            <div class="swiper-button-prev position-relative swiper-change me-lg-5 me-2"></div>
+        </div>
+    </div>
+    <div class="swiper-wrapper swiper-img mt-4">
+        <div class="swiper-slide">
+            <img src="assets/img/category-thumb-1.jpg" height="150px" width="150px">
+            <p class="mt-2 ms-2">Fruits & Veges</p>
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/img/category-thumb-2.jpg" height="150px" width="150px">
+            <p class="mt-2 ms-2">Breads & Sweets</p>
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/img/Category-thumb-3.jpg" height="150px" width="150px">
+            <p class="mt-2 ms-2">Fruits & Veges</p>
+
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/img/category-thumb-4.jpg" height="150px" width="150px">
+            <p class="mt-2 ms-2">Beverages</p>
+
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/img/Category-thumb-5.jpg" height="150px" width="150px">
+            <p class="mt-2 ms-2">Meat Products</p>
+
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/img/category-thumb-6.jpg" height="150px" width="150px">
+            <p class="mt-2 ms-2">Breads</p>
+
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/img/category-thumb-7.jpg" height="150px" width="150px">
+            <p class="mt-2 ms-2">Fruits & Veges</p>
+
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/img/Category-thumb-8.jpg" height="150px" width="150px">
+            <p class="mt-2 ms-2">Breads & Sweets</p>
+
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/img/category-thumb-1.jpg" height="150px" width="150px">
+            <p class="mt-2 ms-2">Fruits & Veges</p>
+
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/img/Category-thumb-2.jpg" height="150px" width="150px">
+            <p class="mt-2 ms-2">Breads</p>
+
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/img/category-thumb-3.jpg" height="150px" width="150px">
+            <p class="mt-2 ms-2">Meat Products</p>
+
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/img/category-thumb-4.jpg" height="150px" width="150px">
+            <p class="mt-2 ms-2">Beverages</p>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ******************Best selling products ****************************-->
+
+<div class="selling_product pt-0 p-lg-5 p-md-3 p-2 pb-0">
+	<div class="d-flex align-items-center justify-content-between">
+		<h2 class="fw-bold">Best selling products</h2>
+		<button type="button" class="btn btn-success me-3">View All</button>
+	</div>
+	<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 mt-4">
+		<div class="col thumb">
+			<img src="assets/img/product-thumb-1.png" height="170px">
+			<p class="mt-2 fs-5">Whole Wheat Sandwich Bread</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart  fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col  thumb">
+			<img src="assets/img/product-thumb-2.png" height="170px">
+			<p class="mt-2 fs-5">Whole Grain Oatmeal</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(41)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$54.00</del>
+				<p class="text-black ms-2 fw-bold">$50.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col  thumb">
+			<img src="assets/img/product-thumb-3.png" height="170px">
+			<p class="mt-2 fs-5">Sharp Cheddar Cheese Block</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(32)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$14.00</del>
+				<p class="text-black ms-2 fw-bold">$12.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col  thumb">
+			<img src="assets/img/product-thumb-4.png" height="170px">
+			<p class="mt-2 fs-5">Organic Baby Spinach</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col  thumb">
+			<img src="assets/img/product-thumb-5.png" height="170px">
+			<p class="mt-2 fs-5">Organic Spinach Leaves (Fresh Produce)</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col  thumb">
+			<img src="assets/img/product-thumb-6.png" height="170px">
+			<p class="mt-2 fs-5">Fresh Salmon</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col  thumb">
+			<img src="assets/img/product-thumb-7.png" height="170px">
+			<p class="mt-2 fs-5">Imported Italian Spaghetti Pasta</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart  fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col  thumb">
+			<img src="assets/img/product-thumb-8.png" height="170px">
+			<p class="mt-2 fs-5">Granny Smith Apples</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col  thumb">
+			<img src="assets/img/product-thumb-9.png" height="170px">
+			<p class="mt-2 fs-5">Organic 2% Reduced Fat Milk</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col  thumb ">
+			<img src="assets/img/product-thumb-10.png" height="170px">
+			<p class="mt-2 fs-5">Greek Style Plain Yogurt</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<!-- **************offer part********************-->
+
+<div class="offer row g-3 p-3">
+	<div class="col col-md-6 col-12 sale d-flex align-items-center p-4" >
+		<div>
+			<h3 class="">Items on SALE</h3>
+			<p>Discounts up to 30%,</p>
+			<button class="button-89" role="button">Shop Now</button>
+		</div>
+	</div>
+	<div class="col  col-md-6 col-12 sale2 g-3">
+		<div class="offers p-3">
+			<h3>Combo Offer</h3>
+			<p class="">Discounts up to 50%</p>
+			<button class="button-89" role="button">Shop Now</button>
+
+		</div>
+		<div class="copon p-3 mt-3">
+			<h3>Discount Coupons</h3>
+			<p>Discounts up to 40%</p>
+			<button class="button-89" role="button">Shop Now</button>
+		</div>
+	</div>
+</div>
+
+<!-- ******************Featured products *******************-->
+
+<div class="container-fluid swiper mySwiper_2 p-3 ps-md-5 pe-md-5 pb-2">
+    <div class="d-flex justify-content-between align-items-center category">
+        <h2 class="fw-bold">Featured products</h2>
+        <div class="d-flex position-relative align-items-center">
+            <button type="button" class="btn btn-success">View All</button>
+            <div class="swiper-button-next position-relative swiper-change ms-4"></div>
+            <div class="swiper-button-prev position-relative swiper-change me-md-5 me-2"></div>
+        </div>
+    </div>
+    <div class="swiper-wrapper mt-4">
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-1.png" height="170px">
+			<p class="mt-2 fs-5">Greek Style Plain Yogurt</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-11.png" height="170px">
+			<p class="mt-2 fs-5">Pure Squeezed No Pulp Orange Juice</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-12.png" height="170px">
+			<p class="mt-2 fs-5">Fresh Oranges</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-13.png" height="170px">
+			<p class="mt-2 fs-5">Gourmet Dark Chocolate Bars</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-14.png" height="170px">
+			<p class="mt-2 fs-5">Fresh Green Celery</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-15.png" height="170px">
+			<p class="mt-2 fs-5">Sandwich Bread</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-16.png" height="170px">
+			<p class="mt-2 fs-5">Honeycrisp Apples</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-17.png" height="170px">
+			<p class="mt-2 fs-5">Whole Wheat Sandwich Bread</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-18.png" height="170px">
+			<p class="mt-2 fs-5">Honeycrisp Apples</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ********************register part**************** -->
+
+<div class="register ms-3 me-3 row text-white">
+	<div class="col col-md-6 col-12 text-center">
+		<h1>Get 25% Discount on your first purchase</h1>
+		<p>Just Sign Up & Register it now to become member.</p>
+	</div>
+	<div class="col col-md-6 col-12 text-center">
+		<input type="text" name="" placeholder="Name" class="p-2">
+		<input type="email" name="" placeholder="Email" class="p-2">
+		<input type="submit" name="" value="submit" class="btn btn-success">
+	</div>
+</div>
+
+<!-- ********************popular product************************* -->
+
+<div class="container-fluid swiper mySwiper_2 p-md-5 p-3 pb-2" >
+    <div class="d-flex justify-content-between align-items-center category">
+        <h2 class="fw-bold">Most popular products</h2>
+        <div class="d-flex position-relative align-items-center">
+            <button type="button" class="btn btn-success">View All</button>
+            <div class="swiper-button-next position-relative swiper-change ms-4"></div>
+            <div class="swiper-button-prev position-relative swiper-change me-lg-5 me-3"></div>
+        </div>
+    </div>
+    <div class="swiper-wrapper mt-4">
+    	<div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-15.png" height="170px">
+			<p class="mt-2 fs-5">Sandwich Bread</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-12.png" height="170px">
+			<p class="mt-2 fs-5">Fresh Oranges</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-1.png" height="170px">
+			<p class="mt-2 fs-5">Greek Style Plain Yogurt</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-13.png" height="170px">
+			<p class="mt-2 fs-5">Gourmet Dark Chocolate Bars</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-14.png" height="170px">
+			<p class="mt-2 fs-5">Fresh Green Celery</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-11.png" height="170px">
+			<p class="mt-2 fs-5">Pure Squeezed No Pulp Orange Juice</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-16.png" height="170px">
+			<p class="mt-2 fs-5">Honeycrisp Apples</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-17.png" height="170px">
+			<p class="mt-2 fs-5">Whole Wheat Sandwich Bread</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-18.png" height="170px">
+			<p class="mt-2 fs-5">Honeycrisp Apples</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ******************Just arrived****************** -->
+
+<div class="container-fluid swiper mySwiper_2 pt-1 ps-md-5 ps-3 pe-2 pb-2">
+    <div class="d-flex justify-content-between align-items-center category">
+        <h2 class="fw-bold">Just arrived</h2>
+        <div class="d-flex position-relative align-items-center">
+            <button type="button" class="btn btn-success">View All</button>
+            <div class="swiper-button-next position-relative swiper-change ms-4"></div>
+            <div class="swiper-button-prev position-relative swiper-change me-md-5 me-3"></div>
+        </div>
+    </div>
+    <div class="swiper-wrapper mt-4">
+    	<div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-18.png" height="170px">
+			<p class="mt-2 fs-5">Honeycrisp Apples</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-17.png" height="170px">
+			<p class="mt-2 fs-5">Whole Wheat Sandwich Bread</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-16.png" height="170px">
+			<p class="mt-2 fs-5">Honeycrisp Apples</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-15.png" height="170px">
+			<p class="mt-2 fs-5">Sandwich Bread</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-14.png" height="170px">
+			<p class="mt-2 fs-5">Fresh Green Celery</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-13.png" height="170px">
+			<p class="mt-2 fs-5">Gourmet Dark Chocolate Bars</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-1.png" height="170px">
+			<p class="mt-2 fs-5">Greek Style Plain Yogurt</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-11.png" height="170px">
+			<p class="mt-2 fs-5">Pure Squeezed No Pulp Orange Juice</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+        </div>
+        <div class="swiper-slide">
+            <div class="col  thumb">
+			<img src="assets/img/product-thumb-12.png" height="170px">
+			<p class="mt-2 fs-5">Fresh Oranges</p>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-stroke"></i>
+				<span>(222)</span>
+			</div>
+			<div class="d-flex justify-content-center mt-2">
+				<del class="text-secondary">$24.00</del>
+				<p class="text-black ms-2 fw-bold">$18.00</p>
+				<p class="text-secondary ms-2 border p-1">10% off</p>
+			</div>
+			<div class="add-cart">
+			<div class=" d-flex justify-content-center">
+				<input type="number" name="" value="1">
+				<button type="button" class="btn btn-success ms-2">
+					<i class="fa-solid fa-cart-shopping text-white"></i> Add to Cart
+				</button>
+				<div class="heart border ms-2 rounded d-flex justify-content-center align-items-center">
+					<i class="fa-regular fa-heart fs-5"></i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+        </div>   
+    </div>
+</div>
+
+
+<!-- **********************recent blog part *******************-->
+
+<div class="p-4 pt-0 blog">
+	<div class="d-flex justify-content-between">
+		<h3 class="fw-bold">Our Recent Blog</h3>
+		<button type="button" class="btn btn-success me-3"> View All</button>
+	</div>
+	<div class="row g-4 justify-content-center mt-4">
+		<div class="col col-12 col-xl-3  p-4 blog-box">
+			<img src="assets/img/post-thumbnail-1.jpg" class="img-fluid">
+			<div class="mt-2">
+				<span class="text-secondary">
+					<i class="fa-regular fa-calendar"></i>
+					 22 aug 2021
+				</span>
+				<span class="text-secondary ms-2">
+					<i class="fa-regular fa-folder"></i>
+					 Tips & Tricks
+				</span>
+			</div>
+			<h2 class="fw-bold mt-2">Top 10 casual look ideas to dress up your kids</h2>
+			<p class="mt-2 fs-5">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+		</div>
+		<div class="col col-12 col-xl-3  p-4 blog-box ms-xl-5">
+			<img src="assets/img/post-thumbnail-2.jpg" class="img-fluid">
+			<div class="mt-2">
+				<span class="text-secondary">
+					<i class="fa-regular fa-calendar"></i>
+					 25 aug 2021
+				</span>
+				<span class="text-secondary ms-2">
+					<i class="fa-regular fa-folder"></i>
+					 trending
+				</span>
+			</div>
+			<h2 class="fw-bold mt-2">Latest trends of wearing street wears supremely</h2>
+			<p class="mt-2 fs-5">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+		</div>
+		<div class="col col-12 col-xl-3  p-4 blog-box ms-xl-5">
+			<img src="assets/img/post-thumbnail-3.jpg" class="img-fluid">
+			<div class="mt-2">
+				<span class="text-secondary">
+					<i class="fa-regular fa-calendar"></i>
+					 28 aug 2021
+				</span>
+				<span class="text-secondary ms-2">
+					<i class="fa-regular fa-folder"></i>
+					 inspiration
+				</span>
+			</div>
+			<h2 class="fw-bold mt-2">10 Different Types of comfortable clothes ideas for women</h2>
+			<p class="mt-2 fs-5">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+		</div>
+	</div>
+
+</div>
+
+
+<!-- download app -->
+
+<div class="container d-app mt-2 ">
+	<div class="row">
+	<div class=" col-xl-6 text-xl-end text-center mt-xl-5 mt-2 p-4">
+		<h1>Download Organic App</h1>
+		<p class="text-secondary fs-5">Online Orders made easy, fast and reliable</p>
+		<div class="d-sm-flex justify-content-xl-end justify-content-center text-center">
+			<div class="store p-2 d-flex align-items-center  text-center ">
+				<i class="fa-brands fa-apple "></i>
+				<div class="ms-2">
+					<p class="m-0">Download on the</p>
+					<p class="fs-4 m-0">App Store</p>
+				</div>
+			</div>
+			<div class="store p-2 d-flex align-items-center  text-center ms-sm-3">
+				<i class="fa-brands fa-google-play"></i>
+				<div class="ms-2">
+					<p class="m-0">Get it on</p>
+					<p class="fs-4 m-0">Google Play</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-xl-6 a-image">
+		
+	</div>
+	</div>
+</div>
+
+
+<!-- people are also looking for -->
+
+<div class="p-search mt-2 p-4">
+	<h2 class="fw-bold">People are also looking for</h2>
+	<label>Blue diamon almonds</label>
+	<label>Angie's boomchickapop</label>
+	<label>Salty kettle corn</label>
+	<label>chobani greek yoghrt</label>
+	<label>sweet vanilla yogurt</label>
+	<label>foster farms takeout crispy wings</label>
+	<label>warrior blend organic</label>
+	<label>chao cheese creamy</label>
+	<label>chicken meatballs</label>
+	<label>Blue diamon almonds</label>
+	<label>Angie's boomchickapop</label>
+	<label>Salty kettle corn</label>
+	<label>chobani greek yoghrt</label>
+	<label>sweet vanilla yogurt</label>
+	<label>foster farms takeout crispy wings</label>
+	<label>warrior blend organic</label>
+	<label>chao cheese creamy</label>
+	<label>chicken meatballs</label>
+</div>
+
+<!-- facelity -->
+
+<div class="container-fluid facelity row justify-content-around mt-3 p-3 g-3">
+	<div class=" col col-lg-2 col-md-3 col-12 rounded border p-4">
+		<i class="fa-solid fa-truck-fast fs-3"></i>
+		<p class="fw-bold fs-3 mt-2">Free Delivery</p>
+		<p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+	</div>
+	<div class=" col col-lg-2 col-md-3 col-12 rounded border p-4">
+		<i class="fa-solid fa-shield-halved fs-3"></i>
+		<p class="fw-bold fs-3 mt-2">100% secure payment</p>
+		<p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+	</div>
+	<div class=" col col-lg-2 col-md-3 col-12 rounded border p-4">
+		<i class="fa-solid fa-medal fs-3"></i>
+		<p class="fw-bold fs-3 mt-2">Quality guarantee</p>
+		<p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+	</div>
+	<div class=" col col-lg-2 col-md-3 col-12 rounded border p-4">
+		<i class="fa-solid fa-piggy-bank fs-3"></i>
+		<p class="fw-bold fs-3 mt-2">guaranteed savings</p>
+		<p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+	</div>
+	<div class=" col col-lg-2 col-md-3 col-12 rounded border p-4">
+		<i class="fa-solid fa-gift fs-3"></i>
+		<p class="fw-bold fs-3 mt-2">Daily offers</p>
+		<p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+	</div>
+</div>
+
+<!-- footer -->
+
+<footer class="container-fluid row justify-content-around mt-5 p-3 g-3">
+	<div class=" col col-lg-2 col-md-3 col-12">
+		<img src="assets/img/logo.svg" width="220px">
+		<div class="d-flex justify-content-around mt-3">
+			<div class="p-2 border round icon">
+				<i class="fa-brands fa-facebook-f text-secondary"></i>
+			</div>
+			<div class="p-2 border round icon">
+				<i class="fa-brands fa-twitter text-secondary"></i>
+			</div>
+			<div class="p-2 border round icon">
+				<i class="fa-brands fa-youtube text-secondary"></i>
+			</div>
+			<div class="p-2 border round icon">
+				<i class="fa-brands fa-instagram text-secondary"></i>
+			</div>
+			<div class="p-2 border round icon">
+				<i class="fa-brands fa-amazon text-secondary"></i>
+			</div>
+		</div>
+	</div>
+	<div class=" col col-lg-2 col-md-3 col-12 p-4 pt-0 Organic">
+		
+		<ul>
+			<p class="fs-4 fw-bolder">Organic</p>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Conditions</a></li>
+			<li><a href="#">Our Journals</a></li>
+			<li><a href="#">Careers</a></li>
+			<li><a href="#">Affiliate Programme</a></li>
+			<li><a href="#">Ultras Press</a></li>
+		</ul>
+	</div>
+	<div class=" col col-lg-2 col-md-3 p-4 pt-0">
+		<ul>
+			<p class="fs-4 fw-bolder">Quick Links</p>
+			<li><a href="#">Offers</a></li>
+			<li><a href="#">Discount Coupons</a></li>
+			<li><a href="#">Stores</a></li>
+			<li><a href="#">Track Order</a></li>
+			<li><a href="#">Shop</a></li>
+			<li><a href="#">Info</a></li>
+		</ul>
+	</div>
+	<div class=" col col-lg-2 col-md-3 col-12">
+		<ul>
+			<p class="fs-4 fw-bolder">Customer Service</p>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Returns & Refunds</a></li>
+			<li><a href="#">Cookie Guidelines</a></li>
+			<li><a href="#">Delivery Information</a></li>
+		</ul>
+	</div>
+	<div class=" col col-lg-2 col-md-3 col-12">
+		<p class="fs-4 fw-bolder">Subscribe Us</p>
+		<p>Subscribe to our newsletter to get updates about our grand offers.</p>
+		<form class="d-flex">
+			<input type="email" name="" placeholder="email" class="for-controll email" id="exampleFormControlInput1">
+			<input type="submit" name="" value="submit" class="submit btn btn-dark">
+		</form>
+	</div>
+</footer>
+
+<!-- External js -->
+<script type="text/javascript" src="assets/js/script.js"></script>
+<!-- slide -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- jquery cdn -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>
+
+<!-- bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
